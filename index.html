@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,7 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" >
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css" />
-<title>pagina web Sastria studio beto</title>
+  <title>Sastreria</title>
 
 </head>
 
@@ -20,21 +23,20 @@
 
 
 
-  <header  class="pagina">
-    
-    <nav  class="navbar navbar-expand-lg">
-      <div  class="container-fluid"class="row justify-content-around" class="text-bg-warning p-3">
+  <header class="conteiner-fluid" class="pagina">
+    <nav  class="navbar navbar-expand-lg"class="row justify-content-around">
+      <div  class="container-fluid bg-mibackground" >
   
-        <figure class="col-4" >
-          <img  src="./img/logo.png" alt="logo"  class="p-lg-1" width="70" height="100"></figure>
+        <figure  class="col-7"style="margin-bottom: 0px;" >
+          <img class="logo" src="./img/logo.png" alt="logo"  ></figure>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div   class="collapse navbar-collapse  " id="navbarSupportedContent" class="col-4" class="s-lg-5" >
+        <div   class="collapse navbar-collapse  " id="navbarSupportedContent"  class="col-4" class="s-lg-5"  >
           <ul class="navbar-nav mx-auto"  width="70" height="100"  >
             <li  class="nav-item" >
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="./index.html"> Inicio </a>
             </li>
             <li  class="nav-item">
               <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
@@ -44,6 +46,9 @@
             </li>
             <li  class="nav-item">
               <a class="nav-link" href="./paginas/ubicacion.html">Ubicacion</a>
+            </li>
+            <li  class="nav-item">
+              <a class="nav-link" href="./paginas/contactame.html">Contactame</a>
             </li>
         </div>
          </div>
@@ -56,15 +61,17 @@
 
   </header>
 
-  <main>
+  <main class="conteiner-fluid">
 
     <section class="pagina__contenedor">
       <div class="pagina__texts"  >
-        <h1 class="text-center p-4" class="pagina__titulo" class="display-1"  >Sastreria Studio Beto </h1>
+        <h1   class="text-center "  style="padding-bottom: 0px; margin-bottom:0px;" >Sastreria Studio Beto </h1>
         <p class="text-center"class="pagina__subtitulo"  class=" fs-6">Para quen luzcas todo a tu medida</p>
        
         <section class="presentacion_contenido" >
-          <img  src="./img/logo.png" alt="logo"  class="text-center" width="30%" height="40%">
+          <figure class="text-center">
+            <img  src="./img/logo.png"   alt="logo"   width="195" height="240">
+          </figure>
           <h2 class="subtitulo">Convinamos lo tradicional y lo actual</h2>
           <p class="presentacion__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in dicta beatae.
             Maxime consequuntur, nostrum aliquid accusamus ipsum perferendis sequi nemo, rem, non tempora numquam
@@ -73,7 +80,7 @@
           <a href="../paginas/contactame.html " class="pagina__cta">contactame ahora</a>
         </section>
         <section class="about_contenido">
-          <div class="about__text">
+          <div class="about__text" class="container-fluid" class="row">
 
             <h3 class="subtitulo">Mis habilidades</h3>
 
@@ -89,10 +96,10 @@
 
           </div>
           <figure class="about__imagen">
-            <img src="./img/patrones.jpg" alt="habilidades">
+            <img src="./img/patrones.jpg" alt="habilidades" width="150" height="200">
           </figure>
           <figure class="about__imagen about__imagen--left">
-            <img src="./img/Taller-de-sastrería.jpg" class="about__pictur" alt="habilidades">
+            <img src="./img/Taller-de-sastrería.jpg" class="about__pictur" alt="habilidades"  width="200" height="300">
           </figure>
           <div class="about__text">
             <h4 class="subtitulo">Sobre mi trabajo</h4>
@@ -111,18 +118,10 @@
         
   </main>
 
-  <footer class="footer">
-    <div class="contenido footer__grid">
-      <nav class="nav nav--footer">
-        <a class="nav__items nav__items--footer" href="./index.html">inicio</a>
-        <a class="nav__items nav__items--footer" href="../paginas/quienesSomos.html">quienes somos</a>
-        <a class="nav__items nav__items--footer" href="../paginas/ubicacion.html">ubicacion</a>
-        <a class="nav__items nav__items--footer" href="../paginas/galeria.html">Proyectos</a>
-
-      </nav>
+  <footer class="conteiner-fluid" class="footer" class="navbar navbar-expand-lg" class="row">
+    <div  style="width:200px; height: 40px;" class="contenido footer__grid  col-lg-11" >
       <section class="footer__contactos">
-        <h3 class="footer__titulo">contactame</h3>
-        <div class="footer__icons">
+        <div class="footer__icons" class="navbar-nav ml-auto "   >
           <span class="footer__contenido-icons">
             <a class="fa-brands fa-facebook-f footer__icons" href="#"></a>
           </span>
@@ -147,11 +146,8 @@
 <script> AOS.init(); </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 
-<
-  
