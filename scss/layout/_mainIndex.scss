@@ -1,0 +1,63 @@
+main{
+    font-size: $fuente_nav;
+    margin: 20px;
+padding: 10px;
+text-align: start;
+line-height: normal;
+
+    .subtitulo{
+        
+        color: $color_subtitulo;
+        font-family: $fuente_nav;
+        margin: 20px;
+        padding: 10px;
+        text-align: start;
+        line-height: normal;
+        
+        .about__parrafo{
+            margin: 20px;
+            padding: 10px;
+            text-align: start;
+            line-height: normal;
+        }
+        
+    }
+
+    h1{
+        font-family: 'Niconne', cursive, ;
+        font-size: 58px;
+        color:$color_titulo;
+        
+        padding: 10px;}
+.presentacion_logo{
+    margin:20px;
+    padding: 10pxs;
+}
+.presentacion_contenido{
+margin: 20px;
+padding: 10px;
+text-align: start;
+line-height: normal;
+
+
+
+
+}
+.about_contenido{
+    overflow: $overflow;
+    @include flex-center;
+    flex-direction: row;
+
+    @include tablet{
+        flex-direction: column;
+
+margin: 0px;
+padding: 0px;
+text-align: start;
+overflow:hidden;
+
+.about__imagen{
+margin-top: 40px;
+
+}
+    }}}

@@ -1,35 +1,23 @@
 
- 
-  
-  header{padding: 0;}
-  
-footer{background-color: #1C71A6;
-    padding:0;
-}
-.bg-mibackground{background-color:#1C71A6;}
-.navbar{padding: 0;}
-.about__parrafo{
+*{
     margin: 0;
-}
-.logo{
-    width: 60 px;
-     height: 100px; 
-     margin: 20px;
-}
-h1{
-    font-family: 'Niconne', cursive, ;
-    font-size: 58px;
-    color:#BF861B;
-    text-shadow: 5px 5px 5px #aaa;
-    padding: 10px;
-}
-.navbar-nav{
-    font-family: 'IM Fell French Canon', serif;
-    font-size: 20px;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+
 /*background: moztaza #BF861B,  azul #1C71A6 ,sombra #aaa ,  */
-.footer__icons{
-color: white;
-}
+@import "./utilitis/variables";
+@import "./utilitis/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Roboto+Condensed:wght@700&display=swap');
 
-
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/mainContactame";
+@import "./layout/mainGaleria";
+@import "./layout/mainIndex";
+@import "./layout/mainQuienessomos";
+@import "./layout/mainUbicacion";
