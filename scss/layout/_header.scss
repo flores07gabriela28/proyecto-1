@@ -1,0 +1,29 @@
+header{padding: 0;
+    font-family: $fuente_nav;
+
+
+.navbar{
+    padding: 0;
+    .bg-mibackground{
+        background-color: $fondo_principal;
+   
+    font-size: 20px;
+   .logo{
+
+        margin: 10px;
+           
+      }
+    
+
+    .navbar-nav{
+        
+        li{
+            list-style: none;
+           pointer-events: visible;
+           &:hover{
+            background-color:$color_clik;
+           }
+        }
+    }
+}
+}}
