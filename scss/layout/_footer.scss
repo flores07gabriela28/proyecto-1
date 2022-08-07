@@ -1,19 +1,16 @@
-footer{
+footer {
     background-color: $fondo_principal;
     padding: 0;
     @include flex-center;
     flex-direction: row;
-
-    @include tablet{
+    @include tablet {
         flex-direction: column;
-} 
-    .footer__icons{
-        color: white;
-        
-       
-       .footer__contenido-icons{
-        font-size: 50px;
-        padding: 5px;
-        
     }
-}}
+    .footer__icons {
+        color: white;
+        .footer__contenido-icons {
+            font-size: 50px;
+            padding: 5px;
+        }
+    }
+}

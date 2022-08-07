@@ -1,0 +1,11 @@
+main {
+    h1{
+    font-size: $titulo_altura;
+    padding: 10px;
+    font-family: $fuente_titulo;
+    color: $color_titulo;}
+    }
+    .card {
+        margin: 5px, 10px;
+        box-shadow: $box-shadow;
+        background-color: $color_clik;}

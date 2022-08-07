@@ -5,13 +5,9 @@
 }
 @mixin tablet {
     @media (min-width:$tablet){
-@content;
-
-    }
+@content; }
 }
 @mixin desktop {
     @media (min-width:$desktop){
-@content;
-
-    }
+@content;}
 }
