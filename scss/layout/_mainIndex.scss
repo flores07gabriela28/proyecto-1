@@ -1,63 +1,82 @@
-main{
-    font-size: $fuente_nav;
-    margin: 20px;
-padding: 10px;
-text-align: start;
-line-height: normal;
+main {
+ 
+  margin: 5px;
+  padding: 20px;
+  text-align: start;
+  line-height: normal;
+  line-height: $interlinedo;
 
-    .subtitulo{
-        
-        color: $color_subtitulo;
-        font-family: $fuente_nav;
-        margin: 20px;
-        padding: 10px;
-        text-align: start;
-        line-height: normal;
-        
-        .about__parrafo{
-            margin: 20px;
-            padding: 10px;
-            text-align: start;
-            line-height: normal;
-        }
-        
+  li {
+    list-style: none;
+    padding: 0px;
+
+  }
+
+
+  .subtitulo {
+    color: $color_subtitulo;
+    font-family: $fuente_nav;
+    margin: 20px;
+    padding: 10px;
+    text-align: start;
+    font-size: $subtitulo_altura;
+  }
+
+  h1 {
+    font-family: $fuente_titulo ;
+    font-size: $titulo_altura;
+    color: $color_titulo;
+    padding: 10px;
+  }
+
+  .pagina__subtitulo {
+    font-family: $fuente_nav;
+    font-size: 20px;
+    color: #89ade6;
+  }
+
+  .presentacion_logo {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .presentacion_contenido {
+    margin: 0px;
+    padding: 0px;
+    text-align: start;
+  }
+}
+
+.about_contenido {
+  overflow: $overflow;
+  @include flex-center;
+  flex-direction: row;
+
+  @include tablet {
+    flex-direction: column;
+
+    margin: 0px;
+    padding: 0px;
+    text-align: start;
+    overflow: hidden;
+
+    h2 {
+      margin: 0px;
     }
 
-    h1{
-        font-family: 'Niconne', cursive, ;
-        font-size: 58px;
-        color:$color_titulo;
-        
-        padding: 10px;}
-.presentacion_logo{
-    margin:20px;
-    padding: 10pxs;
+
+    .about__imagen {
+      margin-top: 40px;
+    }
+
+
+    .about__text {
+      line-height: $interlinedo;
+      font-family: $fuente_titulo ;
+      font-size: $titulo_altura;
+      color: $color_titulo;
+      padding: 10px;
+    }
+
+  }
 }
-.presentacion_contenido{
-margin: 20px;
-padding: 10px;
-text-align: start;
-line-height: normal;
-
-
-
-
-}
-.about_contenido{
-    overflow: $overflow;
-    @include flex-center;
-    flex-direction: row;
-
-    @include tablet{
-        flex-direction: column;
-
-margin: 0px;
-padding: 0px;
-text-align: start;
-overflow:hidden;
-
-.about__imagen{
-margin-top: 40px;
-
-}
-    }}}
